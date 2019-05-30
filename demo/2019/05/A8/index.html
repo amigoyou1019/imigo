@@ -1,0 +1,1032 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=640,user-scalable=no,maximum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>A7首購大攻略：好宅者聯盟 移居之戰 </title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+
+    <!-- Schema.org markup for Google+-->
+    <meta itemprop="name" content="" />
+    <meta itemprop="description" content="" />
+
+    <!-- Open Graph data-->
+    <meta property="og:image" content="" />
+    <meta property="og:title" content="" />
+    <meta property="og:description" content="" />
+
+    <!--  facebook meta -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="">
+    <meta property="og:description" content="">
+    <meta property="og:image:width" content="">
+    <meta property="og:image:height" content="">
+    <meta property="og:image" content="">
+
+    <!-- bundle css -->
+    <link rel="stylesheet" href="Scripts/plugins/owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="Scripts/plugins/fancybox/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="Scripts/plugins/colorbox/colorbox.css">
+    <link rel="stylesheet" href="Content/main_style.css">
+
+</head>
+
+<body>
+    <div class="header">
+        <div class="menu_bar">
+            <a href="#" class="header_btn"><img src="Content/images/header_logo.png"></a>
+            <a href="javascript:;" class="menu_btn"><img src="Content/images/menu_btn.png"><img
+                    src="Content/images/menu_close_btn.png"></a>
+        </div>
+        <div class="menu_con">
+            <div class="menu">
+                <ul>
+                    <li><a href="javascript:;" class="menu_btn mark_kv act" onclick="goToByScroll('mark_kv')">首頁</a>
+                    </li>
+                    <li><a href="javascript:;" class="menu_btn mark_game"
+                            onclick="goToByScroll('mark_game')">挑戰A7住宅王</a></li>
+                    <li><a href="javascript:;" class="menu_btn mark_video"
+                            onclick="goToByScroll('mark_video')">年輕人的購屋首選</a></li>
+                    <li><a href="javascript:;" class="menu_btn mark_map"
+                            onclick="goToByScroll('mark_map')">A7新市鎮好宅地圖</a></li>
+                    <li><a href="#pop_con_notice" class="menu_btn mark_info pop_up_btn notice">活動辦法</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <section class="section_kv " id="mark_kv">
+            <div class="section_kv_animation_a"></div>
+            <div class="section_kv_animation_b"></div>
+            <div class="section_kv_animation_c"></div>
+            <div class="section_kv_animation_d"></div>
+            <div class="section_kv_animation_e"></div>
+            <div class="section_kv_animation_f"></div>
+            <div class="section_container">
+                <div class="section_title"><img src="Content/images/section_kv_title.png"></div>
+                <p class="section_des">
+                    機場捷運林口A7新市鎮，不但交通便利生活機能佳，房價更是大台北五大重劃區裡最親民的，已成為首購族的購屋首選！如何於A7新市鎮看好房卡好位，A7好宅者聯盟幫你以彈指的速度直接看好看滿！</p>
+                <div class="section_btn_con">
+                    <a href="javascript:;" onclick="goToByScroll('mark_game')"><img
+                            src="Content/images/section_kv_btn1.png"></a>
+                    <a href="javascript:;" onclick="goToByScroll('mark_map')"><img
+                            src="Content/images/section_kv_btn2.png"></a>
+                </div>
+            </div>
+        </section>
+        <section class="section_game" id="mark_game">
+            <div class="section_container">
+                <div class="page start act">
+                    <div class="section_title">
+                        <img src="Content/images/section_game_title.png">
+                    </div>
+                    <p class="section_des">眼明手快的好宅者們，只要於限定時間內，<br>成功找出所有A7住宅，A7住宅王就是你！<br>快來挑戰即有機會參加抽獎！</p>
+                    <div class="section_btn_con">
+                        <a href="javascript:;" onclick="matchGame()"><img src="Content/images/game_start_btn.png"></a>
+                    </div>
+                </div>
+                <div class="page game ">
+                    <div class="section_title">
+                        <img src="Content/images/section_game_title_s.png">
+                        <div class="game_timer_block">30</div>
+                    </div>
+                    <div class="game_info_block">限時30秒，翻出相同住宅的兩張牌</div>
+                    <div id="card_game">
+                        <div id="cards">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="page end ">
+                    <div class="section_title"><img src="Content/images/section_game_title.png"></div>
+                    <p class="section_des">你成功找對所有住宅<br>你就是A7住宅王！</p>
+                    <div class="section_btn_con">
+                        <a href="#pop_con_form" class="pop_up_btn form"><img
+                                src="Content/images/game_form_btn.png"></a><br>
+                        <a href="javascript:;" onclick="matchGame()"><img
+                                src="Content/images/game_playagain_btn.png"></a>
+                        <a href="javascript:;"><img src="Content/images/game_share_btn.png"></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section_video" id="mark_video">
+            <div class="section_container">
+                <div class="section_title"><img src="Content/images/section_video_title.png"></div>
+                <div class="section_video_con">
+                    <iframe src="https://www.youtube.com/embed/UsCdok4YMhA?rel=0&autoplay=1" frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                    <!-- width="960" height="532"  -->
+                </div>
+            </div>
+        </section>
+        <section class="section_map" id="mark_map">
+            <div class="section_container">
+                <div class="section_title"><img src="Content/images/section_map_title.png"></div>
+                <div class="drag_con">
+                    <div class="drag_cover"></div>
+                    <div class="drag_map_con">
+                        <div class="drag_overflow">
+                            <div class="main_map" id="drag">
+                                <div class="map_dot cp_a act">
+                                    <span class="map_dot_circle"></span>
+                                    <span class="map_dot_hover"></span>
+                                    <div>
+                                        <a href="javascript:;" class="mark_img"><img
+                                                src="Content/images/cp_a_marker.png"></a>
+                                    </div>
+                                </div>
+                                <div class="map_dot cp_b">
+                                    <span class="map_dot_circle"></span>
+                                    <span class="map_dot_hover"></span>
+                                    <div>
+                                        <a href="javascript:;" class="mark_img">
+                                            <img src="Content/images/cp_b_marker.png">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="map_dot cp_c">
+                                    <span class="map_dot_circle"></span>
+                                    <span class="map_dot_hover"></span>
+                                    <div>
+                                        <a href="javascript:;" class="mark_img"><img
+                                                src="Content/images/cp_c_marker.png"></a>
+                                    </div>
+                                </div>
+                                <div class="map_dot cp_d">
+                                    <span class="map_dot_circle"></span>
+                                    <span class="map_dot_hover"></span>
+                                    <div>
+                                        <a href="javascript:;" class="mark_img"><img
+                                                src="Content/images/cp_d_marker.png"></a>
+                                    </div>
+                                </div>
+                                <div class="map_dot cp_e">
+                                    <span class="map_dot_circle"></span>
+                                    <span class="map_dot_hover"></span>
+                                    <div>
+                                        <a href="javascript:;" class="mark_img"><img
+                                                src="Content/images/cp_e_marker.png"></a>
+                                    </div>
+                                </div>
+                                <div class="map_dot cp_f">
+                                    <span class="map_dot_circle"></span>
+                                    <span class="map_dot_hover"></span>
+                                    <div>
+                                        <a href="javascript:;" class="mark_img"><img
+                                                src="Content/images/cp_f_marker.png"></a>
+                                    </div>
+                                </div>
+                                <div class="map_dot cp_g">
+                                    <span class="map_dot_circle"></span>
+                                    <span class="map_dot_hover"></span>
+                                    <div>
+                                        <a href="javascript:;" class="mark_img"><img
+                                                src="Content/images/cp_g_marker.png"></a>
+                                    </div>
+                                </div>
+                                <div class="map_dot cp_h">
+                                    <span class="map_dot_circle"></span>
+                                    <span class="map_dot_hover"></span>
+                                    <div>
+                                        <a href="javascript:;" class="mark_img"><img
+                                                src="Content/images/cp_h_marker.png"></a>
+                                    </div>
+                                </div>
+                                <div class="map_dot cp_i">
+                                    <span class="map_dot_circle"></span>
+                                    <span class="map_dot_hover"></span>
+                                    <div>
+                                        <a href="javascript:;" class="mark_img"><img
+                                                src="Content/images/cp_i_marker.png"></a>
+                                    </div>
+                                </div>
+                                <div class="map_bg"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cp_nav">
+                    <ul>
+                        <li><a href="javascript:;">協勝玉子園</a></li>
+                        <li><a href="javascript:;">台北國際村</a></li>
+                        <li><a href="javascript:;">合遠新天地</a></li>
+                        <li><a href="javascript:;">根津苑</a></li>
+                        <li><a href="javascript:;">耀台北</a></li>
+                        <li><a href="javascript:;">奇幻莊園</a></li>
+                        <li><a href="javascript:;">富御捷境</a></li>
+                        <li><a href="javascript:;">鴻築樂捷市</a></li>
+                        <li><a href="javascript:;">鴻築金捷市</a></li>
+                    </ul>
+                </div>
+                <div class="cp_owl_con">
+                    <div class="owl-carousel" id="cp_owl">
+                        <div class="cp_owl_item a">
+                            <div class="item_left_box">
+                                <div class="item_title">
+                                    <p>協勝玉子園</p>
+                                </div>
+                                <div class="item_des_con">
+                                    <p>總價588萬起，樂善國小首排</p>
+                                    <p class="item_des_addr">林口特定區文化一路123號</p>
+                                    <p class="item_des_phone">(03) 316-8899</p>
+                                    <div class="item_btn_con">
+                                        <a href="http://www.a7mrt.com/" target="_blank">
+                                            <picture>
+                                                <source media="(max-width: 640px)" srcset="Content/images/cp_a7_btn_m.png">
+                                                <img src="Content/images/cp_a7_btn.png">
+                                            </picture>
+                                        </a>
+                                        <a href="http://www.a7mrt.com/index.php?md=index&cl=selling&at=selling_article&id=66" target="_blank">
+                                            <picture>
+                                                <source media="(max-width: 640px)" srcset="Content/images/cp_more_btn_m.png">
+                                                <img src="Content/images/cp_more_btn.png">
+                                            </picture>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item_right_box"><img src="Content/images/cp_a_image.png"></div>
+                        </div>
+                        <div class="cp_owl_item b">
+                            <div class="item_left_box">
+                                <div class="item_title">
+                                    <p>台北國際村</p>
+                                </div>
+                                <div class="item_des_con">
+                                    <p>自住之王 A7核心樂活區</p>
+                                    <p class="item_des_addr">桃園市龜山區文化一路文樂路口</p>
+                                    <p class="item_des_phone">(03)397-1555</p>
+                                    <div class="item_btn_con">
+                                        <a href="http://www.a7mrt.com/" target="_blank">
+                                            <picture>
+                                                <source media="(max-width: 640px)" srcset="Content/images/cp_a7_btn_m.png">
+                                                <img src="Content/images/cp_a7_btn.png">
+                                            </picture>
+                                        </a>
+                                        <a href="http://www.a7mrt.com/index.php?md=index&cl=selling&at=selling_article&id=65" target="_blank">
+                                            <picture>
+                                                <source media="(max-width: 640px)" srcset="Content/images/cp_more_btn_m.png">
+                                                <img src="Content/images/cp_more_btn.png">
+                                            </picture>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item_right_box"><img src="Content/images/cp_b_image.png"></div>
+                        </div>
+
+                        <div class="cp_owl_item c">
+                            <div class="item_left_box">
+                                <div class="item_title">
+                                    <p>合遠新天地</p>
+                                </div>
+                                <div class="item_des_con">
+                                    <p>交屋付裝潢，雙公園2-3房</p>
+                                    <p class="item_des_addr">桃園市文化二路X華亞三路旁</p>
+                                    <p class="item_des_phone">(03)328-5511</p>
+                                    <div class="item_btn_con">
+                                        <a href="http://www.a7mrt.com/" target="_blank">
+                                            <picture>
+                                                <source media="(max-width: 640px)" srcset="Content/images/cp_a7_btn_m.png">
+                                                <img src="Content/images/cp_a7_btn.png">
+                                            </picture>
+                                        </a>
+                                        <a href="http://www.a7mrt.com/index.php?md=index&cl=selling&at=selling_article&id=64" target="_blank">
+                                            <picture>
+                                                <source media="(max-width: 640px)" srcset="Content/images/cp_more_btn_m.png">
+                                                <img src="Content/images/cp_more_btn.png">
+                                            </picture>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item_right_box"><img src="Content/images/cp_c_image.png"></div>
+                        </div>
+                        <div class="cp_owl_item d">
+                            <div class="item_left_box">
+                                <div class="item_title">
+                                    <p>根津苑</p>
+                                </div>
+                                <div class="item_des_con">
+                                    <p>捷運轉個彎 輕鬆擁有水岸生活宅</p>
+                                    <p class="item_des_addr">桃園市龜山區文化一路及華亞三路口</p>
+                                    <p class="item_des_phone">(03)328-3363</p>
+                                    <div class="item_btn_con">
+                                        <a href="http://www.a7mrt.com/" target="_blank">
+                                            <picture>
+                                                <source media="(max-width: 640px)" srcset="Content/images/cp_a7_btn_m.png">
+                                                <img src="Content/images/cp_a7_btn.png">
+                                            </picture>
+                                        </a>
+                                        <a href="http://www.a7mrt.com/index.php?md=index&cl=selling&at=selling_article&id=62" target="_blank">
+                                            <picture>
+                                                <source media="(max-width: 640px)" srcset="Content/images/cp_more_btn_m.png">
+                                                <img src="Content/images/cp_more_btn.png">
+                                            </picture>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item_right_box"><img src="Content/images/cp_d_image.png"></div>
+                        </div>
+                        <div class="cp_owl_item e">
+                            <div class="item_left_box">
+                                <div class="item_title">
+                                    <p>耀台北</p>
+                                </div>
+                                <div class="item_des_con">
+                                    <p>科技生活 美式雙語宅</p>
+                                    <p class="item_des_addr">桃園市龜山區文化一路103號旁</p>
+                                    <p class="item_des_phone">(03)327-1888</p>
+                                    <div class="item_btn_con">
+                                        <a href="http://www.a7mrt.com/" target="_blank">
+                                            <picture>
+                                                <source media="(max-width: 640px)" srcset="Content/images/cp_a7_btn_m.png">
+                                                <img src="Content/images/cp_a7_btn.png">
+                                            </picture>
+                                        </a>
+                                        <a href="http://www.a7mrt.com/index.php?md=index&cl=selling&at=selling_article&id=63" target="_blank">
+                                            <picture>
+                                                <source media="(max-width: 640px)" srcset="Content/images/cp_more_btn_m.png">
+                                                <img src="Content/images/cp_more_btn.png">
+                                            </picture>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item_right_box"><img src="Content/images/cp_e_image.png"></div>
+                        </div>
+                        <div class="cp_owl_item f">
+                            <div class="item_left_box">
+                                <div class="item_title">
+                                    <p>奇幻莊園</p>
+                                </div>
+                                <div class="item_des_con">
+                                    <p>裝潢家電一條龍，3分鐘輕取A8站</p>
+                                    <p class="item_des_addr">桃園市龜山區文化一路36號</p>
+                                    <p class="item_des_phone">(03)328-9393</p>
+                                    <div class="item_btn_con">
+                                        <a href="http://www.a7mrt.com/" target="_blank">
+                                            <picture>
+                                                <source media="(max-width: 640px)" srcset="Content/images/cp_a7_btn_m.png">
+                                                <img src="Content/images/cp_a7_btn.png">
+                                            </picture>
+                                        </a>
+                                        <a href="http://www.a7mrt.com/index.php?md=index&cl=selling&at=selling_article&id=54" target="_blank">
+                                            <picture>
+                                                <source media="(max-width: 640px)" srcset="Content/images/cp_more_btn_m.png">
+                                                <img src="Content/images/cp_more_btn.png">
+                                            </picture>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item_right_box"><img src="Content/images/cp_f_image.png"></div>
+                        </div>
+                        <div class="cp_owl_item g">
+                            <div class="item_left_box">
+                                <div class="item_title">
+                                    <p>富御捷境</p>
+                                </div>
+                                <div class="item_des_con">
+                                    <p>2+1房加車位，輕鬆擁有起家厝</p>
+                                    <p class="item_des_addr">桃園市龜山區文桃路</p>
+                                    <p class="item_des_phone">(03)397-5777</p>
+                                    <div class="item_btn_con">
+                                        <a href="http://www.a7mrt.com/" target="_blank">
+                                            <picture>
+                                                <source media="(max-width: 640px)" srcset="Content/images/cp_a7_btn_m.png">
+                                                <img src="Content/images/cp_a7_btn.png">
+                                            </picture>
+                                        </a>
+                                        <a href="http://www.a7mrt.com/index.php?md=index&cl=selling&at=selling_article&id=58" target="_blank">
+                                            <picture>
+                                                <source media="(max-width: 640px)" srcset="Content/images/cp_more_btn_m.png">
+                                                <img src="Content/images/cp_more_btn.png">
+                                            </picture>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item_right_box"><img src="Content/images/cp_g_image.png"></div>
+                        </div>
+                        <div class="cp_owl_item h">
+                            <div class="item_left_box">
+                                <div class="item_title">
+                                    <p>鴻築樂捷市</p>
+                                </div>
+                                <div class="item_des_con">
+                                    <p>大基地1848坪，一層三戶，新生代購輕鬆2-4房</p>
+                                    <p class="item_des_addr">桃園市龜山區文化一路103號旁</p>
+                                    <p class="item_des_phone">(03)327-8789</p>
+                                    <div class="item_btn_con">
+                                        <a href="http://www.a7mrt.com/" target="_blank">
+                                            <picture>
+                                                <source media="(max-width: 640px)" srcset="Content/images/cp_a7_btn_m.png">
+                                                <img src="Content/images/cp_a7_btn.png">
+                                            </picture>
+                                        </a>
+                                        <a href="http://www.a7mrt.com/index.php?md=index&cl=selling&at=selling_article&id=57" target="_blank">
+                                            <picture>
+                                                <source media="(max-width: 640px)" srcset="Content/images/cp_more_btn_m.png">
+                                                <img src="Content/images/cp_more_btn.png">
+                                            </picture>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item_right_box"><img src="Content/images/cp_h_image.png"></div>
+                        </div>
+                        <div class="cp_owl_item i">
+                            <div class="item_left_box">
+                                <div class="item_title">
+                                    <p>鴻築金捷市</p>
+                                </div>
+                                <div class="item_des_con">
+                                    <p>體育大學站600米，A7重劃區唯一制震宅</p>
+                                    <p class="item_des_addr">林口特定區文化一路123號</p>
+                                    <p class="item_des_phone">(03)316-8899</p>
+                                    <div class="item_btn_con">
+                                        <a href="http://www.a7mrt.com/" target="_blank">
+                                            <picture>
+                                                <source media="(max-width: 640px)" srcset="Content/images/cp_a7_btn_m.png">
+                                                <img src="Content/images/cp_a7_btn.png">
+                                            </picture>
+                                        </a>
+                                        <a href="http://www.a7mrt.com/index.php?md=index&cl=selling&at=selling_article&id=56" target="_blank">
+                                            <picture>
+                                                <source media="(max-width: 640px)" srcset="Content/images/cp_more_btn_m.png">
+                                                <img src="Content/images/cp_more_btn.png">
+                                            </picture>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item_right_box"><img src="Content/images/cp_i_image.png" style="width: 102%;">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="cp_info_con">
+                    <div class="info_owl_con cp1 act">
+                        <div class="info_item_con">
+                            <div class="item_image" style="background-image: url(Content/images/cp1/a.png)">
+                            </div>
+                            <p class="info_title">cp1</p>
+                            <p class="info_des">標題三十五個字標題三十五個字標題三十五個字標題三十五個字標題三十五個字</p>
+                            <div class="info_btn_con">
+                                <a href="#">
+                                    <picture>
+                                        <source media="(max-width: 640px)" srcset="Content/images/more_btn_m.png">
+                                        <img src="Content/images/more_btn.png">
+                                    </picture>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="info_item_con">
+                            <div class="item_image" style="background-image: url(Content/images/cp1/b.png)">
+                            </div>
+                            <p class="info_title">cp1</p>
+                            <p class="info_des">標題三十五個字標題三十五個字標題三十五個字標題三十五個字標題三十五個字</p>
+                            <div class="info_btn_con">
+                                <a href="#">
+                                    <picture>
+                                        <source media="(max-width: 640px)" srcset="Content/images/more_btn_m.png">
+                                        <img src="Content/images/more_btn.png">
+                                    </picture>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="info_item_con">
+                            <div class="item_image" style="background-image: url(Content/images/cp1/c.png)">
+                            </div>
+                            <p class="info_title">cp1</p>
+                            <p class="info_des">標題三十五個字標題三十五個字標題三十五個字標題三十五個字標題三十五個字</p>
+                            <div class="info_btn_con">
+                                <a href="#">
+                                    <picture>
+                                        <source media="(max-width: 640px)" srcset="Content/images/more_btn_m.png">
+                                        <img src="Content/images/more_btn.png">
+                                    </picture>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info_owl_con cp2">
+                        <div class="info_item_con">
+                            <div class="item_image" style="background-image: url(Content/images/cp2/a.png)">
+                            </div>
+                            <p class="info_title">cp2</p>
+                            <p class="info_des">標題三十五個字標題三十五個字標題三十五個字標題三十五個字標題三十五個字</p>
+                            <div class="info_btn_con">
+                                <a href="#">
+                                    <picture>
+                                        <source media="(max-width: 640px)" srcset="Content/images/more_btn_m.png">
+                                        <img src="Content/images/more_btn.png">
+                                    </picture>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="info_item_con">
+                            <div class="item_image" style="background-image: url(Content/images/cp2/b.png)">
+                            </div>
+                            <p class="info_title">cp2</p>
+                            <p class="info_des">標題三十五個字標題三十五個字標題三十五個字標題三十五個字標題三十五個字</p>
+                            <div class="info_btn_con">
+                                <a href="#">
+                                    <picture>
+                                        <source media="(max-width: 640px)" srcset="Content/images/more_btn_m.png">
+                                        <img src="Content/images/more_btn.png">
+                                    </picture>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="info_item_con">
+                            <div class="item_image" style="background-image: url(Content/images/cp2/c.png)">
+                            </div>
+                            <p class="info_title">cp2</p>
+                            <p class="info_des">標題三十五個字標題三十五個字標題三十五個字標題三十五個字標題三十五個字</p>
+                            <div class="info_btn_con">
+                                <a href="#">
+                                    <picture>
+                                        <source media="(max-width: 640px)" srcset="Content/images/more_btn_m.png">
+                                        <img src="Content/images/more_btn.png">
+                                    </picture>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info_owl_con cp3">
+                        <div class="info_item_con">
+                            <div class="item_image" style="background-image: url(Content/images/cp3/a.png)">
+                            </div>
+                            <p class="info_title">cp3</p>
+                            <p class="info_des">標題三十五個字標題三十五個字標題三十五個字標題三十五個字標題三十五個字</p>
+                            <div class="info_btn_con">
+                                <a href="#">
+                                    <picture>
+                                        <source media="(max-width: 640px)" srcset="Content/images/more_btn_m.png">
+                                        <img src="Content/images/more_btn.png">
+                                    </picture>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="info_item_con">
+                            <div class="item_image" style="background-image: url(Content/images/cp3/b.png)">
+                            </div>
+                            <p class="info_title">cp3</p>
+                            <p class="info_des">標題三十五個字標題三十五個字標題三十五個字標題三十五個字標題三十五個字</p>
+                            <div class="info_btn_con">
+                                <a href="#">
+                                    <picture>
+                                        <source media="(max-width: 640px)" srcset="Content/images/more_btn_m.png">
+                                        <img src="Content/images/more_btn.png">
+                                    </picture>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="info_item_con">
+                            <div class="item_image" style="background-image: url(Content/images/cp3/c.png)">
+                            </div>
+                            <p class="info_title">cp3</p>
+                            <p class="info_des">標題三十五個字標題三十五個字標題三十五個字標題三十五個字標題三十五個字</p>
+                            <div class="info_btn_con">
+                                <a href="#">
+                                    <picture>
+                                        <source media="(max-width: 640px)" srcset="Content/images/more_btn_m.png">
+                                        <img src="Content/images/more_btn.png">
+                                    </picture>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info_owl_con cp4">
+                        <div class="info_item_con">
+                            <div class="item_image" style="background-image: url(Content/images/cp4/a.png)">
+                            </div>
+                            <p class="info_title">cp4</p>
+                            <p class="info_des">標題三十五個字標題三十五個字標題三十五個字標題三十五個字標題三十五個字</p>
+                            <div class="info_btn_con">
+                                <a href="#">
+                                    <picture>
+                                        <source media="(max-width: 640px)" srcset="Content/images/more_btn_m.png">
+                                        <img src="Content/images/more_btn.png">
+                                    </picture>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="info_item_con">
+                            <div class="item_image" style="background-image: url(Content/images/cp4/b.png)">
+                            </div>
+                            <p class="info_title">cp4</p>
+                            <p class="info_des">標題三十五個字標題三十五個字標題三十五個字標題三十五個字標題三十五個字</p>
+                            <div class="info_btn_con">
+                                <a href="#">
+                                    <picture>
+                                        <source media="(max-width: 640px)" srcset="Content/images/more_btn_m.png">
+                                        <img src="Content/images/more_btn.png">
+                                    </picture>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="info_item_con">
+                            <div class="item_image" style="background-image: url(Content/images/cp4/c.png)">
+                            </div>
+                            <p class="info_title">cp4</p>
+                            <p class="info_des">標題三十五個字標題三十五個字標題三十五個字標題三十五個字標題三十五個字</p>
+                            <div class="info_btn_con">
+                                <a href="#">
+                                    <picture>
+                                        <source media="(max-width: 640px)" srcset="Content/images/more_btn_m.png">
+                                        <img src="Content/images/more_btn.png">
+                                    </picture>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info_owl_con cp5">
+                        <div class="info_item_con">
+                            <div class="item_image" style="background-image: url(Content/images/cp5/a.png)">
+                            </div>
+                            <p class="info_title">cp5</p>
+                            <p class="info_des">標題三十五個字標題三十五個字標題三十五個字標題三十五個字標題三十五個字</p>
+                            <div class="info_btn_con">
+                                <a href="#">
+                                    <picture>
+                                        <source media="(max-width: 640px)" srcset="Content/images/more_btn_m.png">
+                                        <img src="Content/images/more_btn.png">
+                                    </picture>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="info_item_con">
+                            <div class="item_image" style="background-image: url(Content/images/cp5/b.png)">
+                            </div>
+                            <p class="info_title">cp5</p>
+                            <p class="info_des">標題三十五個字標題三十五個字標題三十五個字標題三十五個字標題三十五個字</p>
+                            <div class="info_btn_con">
+                                <a href="#">
+                                    <picture>
+                                        <source media="(max-width: 640px)" srcset="Content/images/more_btn_m.png">
+                                        <img src="Content/images/more_btn.png">
+                                    </picture>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="info_item_con">
+                            <div class="item_image" style="background-image: url(Content/images/cp5/c.png)">
+                            </div>
+                            <p class="info_title">cp5</p>
+                            <p class="info_des">標題三十五個字標題三十五個字標題三十五個字標題三十五個字標題三十五個字</p>
+                            <div class="info_btn_con">
+                                <a href="#">
+                                    <picture>
+                                        <source media="(max-width: 640px)" srcset="Content/images/more_btn_m.png">
+                                        <img src="Content/images/more_btn.png">
+                                    </picture>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info_owl_con cp6">
+                        <div class="info_item_con">
+                            <div class="item_image" style="background-image: url(Content/images/cp6/a.png)">
+                            </div>
+                            <p class="info_title">cp6</p>
+                            <p class="info_des">標題三十五個字標題三十五個字標題三十五個字標題三十五個字標題三十五個字</p>
+                            <div class="info_btn_con">
+                                <a href="#">
+                                    <picture>
+                                        <source media="(max-width: 640px)" srcset="Content/images/more_btn_m.png">
+                                        <img src="Content/images/more_btn.png">
+                                    </picture>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="info_item_con">
+                            <div class="item_image" style="background-image: url(Content/images/cp6/b.png)">
+                            </div>
+                            <p class="info_title">cp6</p>
+                            <p class="info_des">標題三十五個字標題三十五個字標題三十五個字標題三十五個字標題三十五個字</p>
+                            <div class="info_btn_con">
+                                <a href="#">
+                                    <picture>
+                                        <source media="(max-width: 640px)" srcset="Content/images/more_btn_m.png">
+                                        <img src="Content/images/more_btn.png">
+                                    </picture>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="info_item_con">
+                            <div class="item_image" style="background-image: url(Content/images/cp6/c.png)">
+                            </div>
+                            <p class="info_title">cp6</p>
+                            <p class="info_des">標題三十五個字標題三十五個字標題三十五個字標題三十五個字標題三十五個字</p>
+                            <div class="info_btn_con">
+                                <a href="#">
+                                    <picture>
+                                        <source media="(max-width: 640px)" srcset="Content/images/more_btn_m.png">
+                                        <img src="Content/images/more_btn.png">
+                                    </picture>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info_owl_con cp7">
+                        <div class="info_item_con">
+                            <div class="item_image" style="background-image: url(Content/images/cp7/a.png)">
+                            </div>
+                            <p class="info_title">cp7</p>
+                            <p class="info_des">標題三十五個字標題三十五個字標題三十五個字標題三十五個字標題三十五個字</p>
+                            <div class="info_btn_con">
+                                <a href="#">
+                                    <picture>
+                                        <source media="(max-width: 640px)" srcset="Content/images/more_btn_m.png">
+                                        <img src="Content/images/more_btn.png">
+                                    </picture>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="info_item_con">
+                            <div class="item_image" style="background-image: url(Content/images/cp7/b.png)">
+                            </div>
+                            <p class="info_title">cp7</p>
+                            <p class="info_des">標題三十五個字標題三十五個字標題三十五個字標題三十五個字標題三十五個字</p>
+                            <div class="info_btn_con">
+                                <a href="#">
+                                    <picture>
+                                        <source media="(max-width: 640px)" srcset="Content/images/more_btn_m.png">
+                                        <img src="Content/images/more_btn.png">
+                                    </picture>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="info_item_con">
+                            <div class="item_image" style="background-image: url(Content/images/cp7/c.png)">
+                            </div>
+                            <p class="info_title">cp7</p>
+                            <p class="info_des">標題三十五個字標題三十五個字標題三十五個字標題三十五個字標題三十五個字</p>
+                            <div class="info_btn_con">
+                                <a href="#">
+                                    <picture>
+                                        <source media="(max-width: 640px)" srcset="Content/images/more_btn_m.png">
+                                        <img src="Content/images/more_btn.png">
+                                    </picture>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info_owl_con cp8">
+                        <div class="info_item_con">
+                            <div class="item_image" style="background-image: url(Content/images/cp8/a.png)">
+                            </div>
+                            <p class="info_title">cp8</p>
+                            <p class="info_des">標題三十五個字標題三十五個字標題三十五個字標題三十五個字標題三十五個字</p>
+                            <div class="info_btn_con">
+                                <a href="#">
+                                    <picture>
+                                        <source media="(max-width: 640px)" srcset="Content/images/more_btn_m.png">
+                                        <img src="Content/images/more_btn.png">
+                                    </picture>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="info_item_con">
+                            <div class="item_image" style="background-image: url(Content/images/cp8/b.png)">
+                            </div>
+                            <p class="info_title">cp8</p>
+                            <p class="info_des">標題三十五個字標題三十五個字標題三十五個字標題三十五個字標題三十五個字</p>
+                            <div class="info_btn_con">
+                                <a href="#">
+                                    <picture>
+                                        <source media="(max-width: 640px)" srcset="Content/images/more_btn_m.png">
+                                        <img src="Content/images/more_btn.png">
+                                    </picture>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="info_item_con">
+                            <div class="item_image" style="background-image: url(Content/images/cp8/c.png)">
+                            </div>
+                            <p class="info_title">cp8</p>
+                            <p class="info_des">標題三十五個字標題三十五個字標題三十五個字標題三十五個字標題三十五個字</p>
+                            <div class="info_btn_con">
+                                <a href="#">
+                                    <picture>
+                                        <source media="(max-width: 640px)" srcset="Content/images/more_btn_m.png">
+                                        <img src="Content/images/more_btn.png">
+                                    </picture>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info_owl_con cp9">
+                        <div class="info_item_con">
+                            <div class="item_image" style="background-image: url(Content/images/cp9/a.png)">
+                            </div>
+                            <p class="info_title">cp9</p>
+                            <p class="info_des">標題三十五個字標題三十五個字標題三十五個字標題三十五個字標題三十五個字</p>
+                            <div class="info_btn_con">
+                                <a href="#">
+                                    <picture>
+                                        <source media="(max-width: 640px)" srcset="Content/images/more_btn_m.png">
+                                        <img src="Content/images/more_btn.png">
+                                    </picture>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="info_item_con">
+                            <div class="item_image" style="background-image: url(Content/images/cp9/b.png)">
+                            </div>
+                            <p class="info_title">cp9</p>
+                            <p class="info_des">標題三十五個字標題三十五個字標題三十五個字標題三十五個字標題三十五個字</p>
+                            <div class="info_btn_con">
+                                <a href="#">
+                                    <picture>
+                                        <source media="(max-width: 640px)" srcset="Content/images/more_btn_m.png">
+                                        <img src="Content/images/more_btn.png">
+                                    </picture>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="info_item_con">
+                            <div class="item_image" style="background-image: url(Content/images/cp9/c.png)">
+                            </div>
+                            <p class="info_title">cp9</p>
+                            <p class="info_des">標題三十五個字標題三十五個字標題三十五個字標題三十五個字標題三十五個字</p>
+                            <div class="info_btn_con">
+                                <a href="#">
+                                    <picture>
+                                        <source media="(max-width: 640px)" srcset="Content/images/more_btn_m.png">
+                                        <img src="Content/images/more_btn.png">
+                                    </picture>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cp_dots_con">
+                    <ul>
+                        <li class="act"></li>
+                        <li class=""></li>
+                        <li class=""></li>
+                        <li class=""></li>
+                        <li class=""></li>
+                        <li class=""></li>
+                        <li class=""></li>
+                        <li class=""></li>
+                        <li class=""></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="footer">
+        <a href="#"><img src="Content/images/footer_logo.png"></a>
+    </div>
+
+
+
+    <div class="side_ad">
+        <div class="container">
+            <a class="btn_open"></a>
+            <a class="btn_close" href="javascript:;"><img src="Content/images/side_close_btn.png"></a>
+            <a class="btn_login" href="javascript:;">
+                <picture>
+                    <source media="(max-width: 640px)" srcset="Content/images/side_login_btn_m.png">
+                    <img src="Content/images/side_login_btn.png">
+                </picture>
+            </a>
+        </div>
+    </div>
+    
+    <div style='display:none'>
+        <div class="popUp_con" id="pop_con_form">
+            <P class="pop_title">
+                填妥下列資料並送出<br>
+                即可參加抽獎！
+            </P>
+            <div class="pop_form_con">
+                <div class="input_row">
+                    <div class="row_title">姓名</div>
+                    <div class="row_con"><input type="text" name=""></div>
+                </div>
+                <div class="input_row">
+                    <div class="row_title">手機號碼</div>
+                    <div class="row_con"><input type="text" name=""></div>
+                </div>
+                <div class="input_row">
+                    <div class="row_title">郵遞區號</div>
+                    <div class="row_con"><input type="text" name=""></div>
+                </div>
+                <div class="input_row">
+                    <div class="row_title">收件地址</div>
+                    <div class="row_con"><input type="text" name=""></div>
+                </div>
+                <div class="input_row">
+                    <div class="row_title">Email</div>
+                    <div class="row_con"><input type="text" name=""></div>
+                </div>
+                <div class="info_con">
+                    <p>(為確保得獎資訊，請填入正確資料)</p>
+                    <label class="container">
+                        <input type="checkbox"> 我已閱讀並同意<a href="#">個資法條款及活動辦法</a>
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+                <input type="submit" class="send_btn" onclick='parent.jQuery.colorbox.close()'>
+            </div>
+            <img class="bak_item" src="Content/images/pop_bak_item.png">
+        </div>
+        <div class="popUp_con notice" id="pop_con_notice">
+            <P class="pop_title">活動辦法</P>
+            <div class="notice_con">
+                <div class="custom_ul">
+                    <label>．活動時間：</label>
+                    <p>即日起~2019/6/30</p>
+                </div>
+                <div class="custom_ul">
+                    <label>．活動說明：</label>
+                    <p>
+                        於活動期間內參加活動並填寫資料，即有機會獲得下列獎項：<br>
+                        雪肌精 極潤型200ML (市價$1,350)-抽2名<br>
+                        雪肌精 BB霜 28ML (市價$900)-抽3名<br>
+                        丰靡美姬‧幻粧 奶油霜潤唇釉 6g (市價$770，恕不挑色)-抽5名<br>
+                        丰靡美姬・幻粧 立體多效眉筆 0.5g (市價$660，恕不挑色)-抽3名
+                    </p>
+                </div>
+                <div class="custom_ul">
+                    <label>．得獎公佈：</label>
+                    <p>將於2019/7/20公布得獎名單於活動網頁。</p>
+                </div>
+                注意事項：<br>
+                1.獎品於公布後三週內寄出，寄送範圍僅限台、澎、金、馬地區。<br>
+                2.商品將依活動參加者所填寫之資料寄送，如資料填寫不實或不完整導致商品投遞失敗，恕將視為棄權，不再重新補寄。<br>
+                3.參與本活動之所有資料均由活動執行單位保有，作為商品寄送依據名單。<br>
+                4.本活動注意事項載明於活動網頁中，參加者於參加活動時即同意接受本活動注意事項之規範。如有違反本活動注意事項之行為，活動執行單位得取消其參加或得獎資格，並對於任何破壞本活動之行為保留相關權利。<br>
+                5.參加者保證所有填寫或提出之資料均為正確，且未冒用或盜用任何第三人之資料或智慧財產權。如有不實或不正確之情事，將被取消參加資格；如為得獎者，則取消得獎資格。如因此致活動執行單位無法通知其得獎訊息時，活動執行單位不負任何責任，且如有致損害於活動執行單位或其他任何第三人，參加者應負一切民刑事責任。得獎者，不得將贈品轉讓給第三人或額外販售之行為。<br>
+                6.本活動開放給台灣地區(包括台、澎、金、馬)之全體居民參加，但主辦單位之員工或親屬及廣告代理商、其他配合廠商之員工不能參與本活動。<br>
+                7.如有任何因電腦、網路、電話、技術或不可歸責於活動執行單位之事由，而使寄予得獎/試用人之商品有延遲、遺失、錯誤、無法辨識或毀損之情況，活動執行單位不負任何法律責任，參加者亦不得因此異議。<br>
+                8.本活動因故無法進行時，活動執行單位有權決定取消、終止、修改或暫停本活動。<br>
+                9.活動執行單位保有審核參加資格之權利。<br>
+                10.主辦單位保留隨時修改獎品數量之權利。<br>
+                本活動之所有獎品以實物為準，獎品部份不得折抵現金；活動執行單位保留更換獎品之權利。依財政部國稅局規定，中獎金額或獎項若為新台幣1,000-20,000元(含20,000元)，中獎人須申報當年所得，活動廠商將於年底寄發扣繳憑單予獲獎人。中獎金額或獎項若超過新台幣20,000元以上，依法應扣繳10%之稅金(非中華民國境內居住之個人，依法扣繳20%之稅金)，若中獎者未能依法繳納稅金，即視為喪失得獎資格。<br>
+            </div>
+            <img class="bak_item" src="Content/images/pop_bak_item.png">
+        </div>
+    </div>
+
+    <!-- bundle scripts -->
+    <script src="Scripts/jquery-3.3.1.min.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script> -->
+    <script src="https://unpkg.com/draggabilly@2/dist/draggabilly.pkgd.min.js"></script>
+    <script src="Scripts/bootstrap.bundle.min.js"></script>
+    <script src="Scripts/plugins/owlcarousel/owl.carousel.min.js"></script>
+    <script src="Scripts/plugins/colorbox/jquery.colorbox.js"></script>
+    <script src="Scripts/match.js"></script>
+    <script src="Scripts/main_scripts.js"></script>
+    <script>
+
+        $(".pop_up_btn.form").colorbox({
+            fixed: true,
+            inline: true,
+            close: ".send_btn",
+            innerWidth: 640,
+            innerHeight: 563,
+            onOpen: function () { console.log('onOpen: colorbox is about to open'); },
+            onComplete: function () { console.log('onComplete: colorbox has displayed the loaded content'); },
+            onClosed: function () { console.log('onClosed: colorbox has completely closed'); }
+        });
+
+        var noticeWidth = 966;
+        var noticeHeight = 573;
+
+        if ($(window).width() <= 640) {
+            noticeWidth = 640;
+            noticeHeight = 790;
+        }
+
+        $(".pop_up_btn.notice").colorbox({
+            fixed: true,
+            inline: true,
+            close: ".send_btn",
+            innerWidth: noticeWidth,
+            innerHeight: noticeHeight,
+            onOpen: function () { console.log('onOpen: colorbox is about to open'); },
+            onComplete: function () { console.log('onComplete: colorbox has displayed the loaded content'); },
+            onClosed: function () { console.log('onClosed: colorbox has completely closed'); }
+        });
+
+    </script>
+</body>
+
+</html>

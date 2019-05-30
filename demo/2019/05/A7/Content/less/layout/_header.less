@@ -1,0 +1,112 @@
+//main: ../_main.less
+
+// 框架
+//-------------------------------------------------------
+
+.header{
+    width: 100%;
+    position: absolute;
+    top:900px;
+    z-index: 9;
+}
+
+.header.fixed{
+    position: fixed;
+    top:0;
+}
+
+.header.act{
+    z-index: 999;
+}
+
+.header .menu_bar{
+    width: 100%;
+    height: 50px;
+    background-color:#ca0c0c;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header.fixed .menu_bar{
+}
+
+.header a img{
+    width: 100%;
+}
+
+.header a.header_btn{
+    width: 130px;
+    margin-left: 20px;
+}
+
+.header a.menu_btn{
+    width: 100px;
+    margin-right: 20px;
+}
+
+.header .menu_bar a.menu_btn{
+    img:last-child{
+        display: none;
+    }
+}
+
+.header .menu_bar a.menu_btn.act{
+    img:first-child{
+        display: none;
+    }
+
+    img:last-child{
+        display: block;
+    }
+}
+
+// menu
+
+.header .menu_con{
+    width: 100%;
+    height: 0px;
+    background-color:rgba(0, 0, 0, 0.7);
+    overflow: hidden;
+}
+
+.header .menu_con .menu{
+    width: 400px;
+    height: 100%;
+    background-color:#ae0b14;
+    float: right;
+    display: flex;
+    align-items: center;
+}
+
+.header .menu_con .menu ul{
+    text-align: center;
+}
+
+.header .menu_con .menu li{
+    width: 290px;
+    height: 89px;
+    display: inline-block;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.header .menu_con .menu li a{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 28px;
+    font-weight: bold;
+    color: white;
+    padding-top: 12px;
+}
+
+.header .menu_con .menu li a.act{
+    background-image: url('images/menu_hove_btn.png');
+    background-repeat: no-repeat;
+    color: #ae0b14;
+}
+

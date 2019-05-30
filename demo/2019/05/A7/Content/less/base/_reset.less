@@ -1,0 +1,57 @@
+//main: ../_main.less
+
+// Reset Html Tags
+// font-size:16px*62.5%=10px, than 16px=1.6rem
+//-------------------------------------------------------
+
+    html{
+        height: 100%;
+        font: inherit;
+        font-size: 62.5%;
+    }
+
+    body{
+        height: 100%;
+        color: @color_base;
+        line-height: 1;
+        overflow-x: hidden;
+        font-family: 'Noto Sans TC', sans-serif, Microsoft JhengHei, "微軟正黑體";
+        font-weight: 400;
+        font-size: 1.6rem;
+
+        &.fixed{
+            overflow: hidden;
+        }
+
+        // 先預載keyview
+
+        &:after {
+            content: url('images/keyview/keyview_atm.png')
+                     url('images/keyview/keyview_loan.png')
+                     url('images/keyview/keyview_login.png')
+                     url('images/keyview/keyview_money.png')
+                     url('images/keyview/keyview_pay.png')
+                     url('images/keyview/keyview_service.png')
+                     url('images/bg.gif');
+            display: none;
+        }
+
+    }
+
+    a:focus,
+    button:focus,
+    input:focus,
+    select:focus{
+        outline: none;
+    }
+
+    a,
+    a:hover,
+    a:active{
+        text-decoration: none;
+        transition: @transition_all;
+    }
+
+    img{
+        max-width: 100%;
+    }

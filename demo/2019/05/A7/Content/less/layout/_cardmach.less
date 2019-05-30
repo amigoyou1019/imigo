@@ -1,0 +1,138 @@
+//main: ../_main.less
+
+//pc
+@pcwidth: 146px;
+@pcheight: 139px;
+//mobile
+@mobilewidth: 119px;
+@mobileheight: 114px;
+
+
+#card_game
+{
+    width: 926px;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+#cards
+{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    margin:20px auto 0;
+}
+
+#cards.ready{
+    .card{
+        pointer-events: none;
+    }
+    .back{
+        transform: rotateY(0deg);
+        -webkit-transform: rotateY(0deg);
+    }
+}
+
+.card
+{
+    width: @pcwidth;
+    height: @pcheight;
+    display: inline-block;
+    position: relative;
+    position: absolute;
+    cursor: pointer;
+}
+.face
+{
+    width: @pcwidth;
+    height: @pcheight;
+    border-radius:10px;
+    position: absolute;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    position: absolute;
+    top:0;
+    left: 0;
+}
+
+#cards.start .face{
+    transition:all .1s;
+    -webkit-transition:all .1s;
+}
+
+.front
+{
+    background: #999 url("images/game_img.png")-400% -100%;
+    // z-index: 10;
+}
+.back
+{
+    background: #efefef url("images/game_img.png");
+    -webkit-transform: rotateY(-180deg);
+    // z-index: 8;
+}
+.face:hover
+{
+    box-shadow: 0 0 40px #aaa;
+    -webkit-box-shadow: 0 0 40px #aaa;
+}
+
+.cardA{background-position: 0px 0px;}
+.cardB{background-position: -100% 0%;}
+.cardC{background-position: -200% 0%;}
+.cardD{background-position: -300% 0%;}
+.cardE{background-position: -400% 0%;}
+.cardF{background-position: 0% -100%;}
+.cardG{background-position: -100% -100%;}
+.cardH{background-position: -200% -100%;}
+.cardI{background-position: -300% -100%;}
+
+.card-flipped .front
+{
+    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+}
+.card-flipped .back
+{
+    transform: rotateY(0deg);
+    -webkit-transform: rotateY(0deg);
+}
+/*移除牌*/
+.card-removed
+{
+    opacity: 0;
+}
+
+@media(max-width: 640px){
+
+    #cards{
+        text-align: center;
+        margin: 60px auto 0;
+    }
+
+    #card_game{
+        width: 100%;
+    }
+
+    .card{
+        width: @mobilewidth;
+        height: @mobileheight;
+        position:inherit;
+        margin: 0 3px 10px;
+    }
+
+    .face{
+        width: @mobilewidth;
+        height: @mobileheight;
+    }
+
+    .front{
+        
+        background-size: 500%;
+    }
+
+    .back{
+        background-size: 500%;
+    }
+
+}

@@ -1,0 +1,639 @@
+//main: ../_main.less
+
+// 常用
+//-------------------------------------------------------
+
+    .text-dark{
+        color: @color_base;
+    }
+    .text-green{
+        color: @color_green;
+    }
+    .text-red, .text-error, .error{
+        color: @color_red;
+    }
+    .text-underline{
+        text-decoration: underline;
+    }
+    .text-center{
+        text-align: center !important;
+        justify-content: center !important;
+    }
+    .text-underline{
+        text-decoration: underline;
+    }
+    .text-uppercase{
+        text-transform: uppercase; // 大寫
+    }
+
+
+
+// 框線
+//-------------------------------------------------------
+
+    .border-less{
+        border: none !important;
+    }
+    .border-top{
+        border-top: 1px solid @color_light;
+    }
+    .border-bottom{
+        border-bottom: 1px solid @color_light;
+    }
+    .border-error{
+        border: 1px solid @color_red;
+    }
+
+
+
+// 背景
+//-------------------------------------------------------
+
+    .bg-none{
+        background-color: transparent !important;
+    }
+    .bg-white{
+        background-color: white !important;
+    }
+    .bg-light{
+        background-color: @color_soft !important;
+    }
+
+
+
+// 隱藏
+//-------------------------------------------------------
+
+    .clearafter:after{
+        content: '';
+        display: table;
+        clear: both;
+    }
+
+    .sr-only {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0,0,0,0);
+        border: 0;
+    }
+
+    .hide, .hidden{
+        display: none !important;
+    }
+
+
+
+// 間距 Margin (命名方式參考 bootstrap)
+//-------------------------------------------------------
+
+    // 手機
+
+    @media @max575{
+
+        // 左間距
+
+        .ml-sm{
+            &-1{
+                margin-left: .25rem !important;
+            }
+            &-2{
+                margin-left: .5rem !important;
+            }
+            &-3{
+                margin-left: 1rem !important;
+            }
+            &-4{
+                margin-left: 1.5rem !important;
+            }
+            &-5{
+                margin-left: 2rem !important;
+            }
+        }
+
+        // 右間距
+
+        .mr-sm{
+            &-1{
+                margin-right: .25rem !important;
+            }
+            &-2{
+                margin-right: .5rem !important;
+            }
+            &-3{
+                margin-right: 1rem !important;
+            }
+            &-4{
+                margin-right: 1.5rem !important;
+            }
+            &-5{
+                margin-right: 2rem !important;
+            }
+        }
+
+        // 上間距
+
+        .mt-sm{
+            &-1{
+                margin-top: .25rem !important;
+            }
+            &-2{
+                margin-top: .5rem !important;
+            }
+            &-3{
+                margin-top: 1rem !important;
+            }
+            &-4{
+                margin-top: 1.5rem !important;
+            }
+            &-5{
+                margin-top: 2rem !important;
+            }
+        }
+
+        // 下間距
+
+        .mb-sm{
+            &-1{
+                margin-bottom: .25rem !important;
+            }
+            &-2{
+                margin-bottom: .5rem !important;
+            }
+            &-3{
+                margin-bottom: 1rem !important;
+            }
+            &-4{
+                margin-bottom: 1.5rem !important;
+            }
+            &-5{
+                margin-bottom: 2rem !important;
+            }
+        }
+    }
+
+    // 平板
+
+    @media @min576{
+
+        // 左間距
+
+        .ml-md{
+            &-1{
+                margin-left: .25rem !important;
+            }
+            &-2{
+                margin-left: .5rem !important;
+            }
+            &-3{
+                margin-left: 1rem !important;
+            }
+            &-4{
+                margin-left: 1.5rem !important;
+            }
+            &-5{
+                margin-left: 2rem !important;
+            }
+        }
+
+        // 右間距
+
+        .mr-md{
+            &-1{
+                margin-right: .25rem !important;
+            }
+            &-2{
+                margin-right: .5rem !important;
+            }
+            &-3{
+                margin-right: 1rem !important;
+            }
+            &-4{
+                margin-right: 1.5rem !important;
+            }
+            &-5{
+                margin-right: 2rem !important;
+            }
+        }
+
+        // 上間距
+
+        .mt-md{
+            &-1{
+                margin-top: .25rem !important;
+            }
+            &-2{
+                margin-top: .5rem !important;
+            }
+            &-3{
+                margin-top: 1rem !important;
+            }
+            &-4{
+                margin-top: 1.5rem !important;
+            }
+            &-5{
+                margin-top: 2rem !important;
+            }
+        }
+
+        // 下間距
+
+        .mb-md{
+            &-1{
+                margin-bottom: .25rem !important;
+            }
+            &-2{
+                margin-bottom: .5rem !important;
+            }
+            &-3{
+                margin-bottom: 1rem !important;
+            }
+            &-4{
+                margin-bottom: 1.5rem !important;
+            }
+            &-5{
+                margin-bottom: 2rem !important;
+            }
+        }
+    }
+
+    // 桌機
+
+    @media @min992{
+
+        // 左間距
+
+        .ml-lg{
+            &-1{
+                margin-left: .25rem !important;
+            }
+            &-2{
+                margin-left: .5rem !important;
+            }
+            &-3{
+                margin-left: 1rem !important;
+            }
+            &-4{
+                margin-left: 1.5rem !important;
+            }
+            &-5{
+                margin-left: 2rem !important;
+            }
+        }
+
+        // 右間距
+
+        .mr-lg{
+            &-1{
+                margin-right: .25rem !important;
+            }
+            &-2{
+                margin-right: .5rem !important;
+            }
+            &-3{
+                margin-right: 1rem !important;
+            }
+            &-4{
+                margin-right: 1.5rem !important;
+            }
+            &-5{
+                margin-right: 2rem !important;
+            }
+        }
+
+        // 上間距
+
+        .mt-lg{
+            &-1{
+                margin-top: .25rem !important;
+            }
+            &-2{
+                margin-top: .5rem !important;
+            }
+            &-3{
+                margin-top: 1rem !important;
+            }
+            &-4{
+                margin-top: 1.5rem !important;
+            }
+            &-5{
+                margin-top: 2rem !important;
+            }
+        }
+
+        // 下間距
+
+        .mb-lg{
+            &-1{
+                margin-bottom: .25rem !important;
+            }
+            &-2{
+                margin-bottom: .5rem !important;
+            }
+            &-3{
+                margin-bottom: 1rem !important;
+            }
+            &-4{
+                margin-bottom: 1.5rem !important;
+            }
+            &-5{
+                margin-bottom: 2rem !important;
+            }
+        }
+    }
+
+
+
+// 內距 Padding (命名方式參考 bootstrap)
+//-------------------------------------------------------
+
+    // 平板
+
+    @media @max575{
+
+        // 左內距
+
+        .pl-sm{
+            &-1{
+                padding-left: .25rem !important;
+            }
+            &-2{
+                padding-left: .5rem !important;
+            }
+            &-3{
+                padding-left: 1rem !important;
+            }
+            &-4{
+                padding-left: 1.5rem !important;
+            }
+            &-5{
+                padding-left: 2rem !important;
+            }
+        }
+
+        // 右內距
+
+        .pr-sm{
+            &-1{
+                padding-right: .25rem !important;
+            }
+            &-2{
+                padding-right: .5rem !important;
+            }
+            &-3{
+                padding-right: 1rem !important;
+            }
+            &-4{
+                padding-right: 1.5rem !important;
+            }
+            &-5{
+                padding-right: 2rem !important;
+            }
+        }
+
+        // 上內距
+
+        .pt-sm{
+            &-1{
+                padding-top: .25rem !important;
+            }
+            &-2{
+                padding-top: .5rem !important;
+            }
+            &-3{
+                padding-top: 1rem !important;
+            }
+            &-4{
+                padding-top: 1.5rem !important;
+            }
+            &-5{
+                padding-top: 2rem !important;
+            }
+        }
+
+        // 下內距
+
+        .pb-sm{
+            &-1{
+                padding-bottom: .25rem !important;
+            }
+            &-2{
+                padding-bottom: .5rem !important;
+            }
+            &-3{
+                padding-bottom: 1rem !important;
+            }
+            &-4{
+                padding-bottom: 1.5rem !important;
+            }
+            &-5{
+                padding-bottom: 2rem !important;
+            }
+        }
+    }
+
+    // 平板
+
+    @media @min576{
+
+        // 左內距
+
+        .pl-md{
+            &-1{
+                padding-left: .25rem !important;
+            }
+            &-2{
+                padding-left: .5rem !important;
+            }
+            &-3{
+                padding-left: 1rem !important;
+            }
+            &-4{
+                padding-left: 1.5rem !important;
+            }
+            &-5{
+                padding-left: 2rem !important;
+            }
+        }
+
+        // 右內距
+
+        .pr-md{
+            &-1{
+                padding-right: .25rem !important;
+            }
+            &-2{
+                padding-right: .5rem !important;
+            }
+            &-3{
+                padding-right: 1rem !important;
+            }
+            &-4{
+                padding-right: 1.5rem !important;
+            }
+            &-5{
+                padding-right: 2rem !important;
+            }
+        }
+
+        // 上內距
+
+        .pt-md{
+            &-1{
+                padding-top: .25rem !important;
+            }
+            &-2{
+                padding-top: .5rem !important;
+            }
+            &-3{
+                padding-top: 1rem !important;
+            }
+            &-4{
+                padding-top: 1.5rem !important;
+            }
+            &-5{
+                padding-top: 2rem !important;
+            }
+        }
+
+        // 下內距
+
+        .pb-md{
+            &-1{
+                padding-bottom: .25rem !important;
+            }
+            &-2{
+                padding-bottom: .5rem !important;
+            }
+            &-3{
+                padding-bottom: 1rem !important;
+            }
+            &-4{
+                padding-bottom: 1.5rem !important;
+            }
+            &-5{
+                padding-bottom: 2rem !important;
+            }
+        }
+    }
+
+    // 桌機
+
+    @media @min992{
+
+        // 左內距
+
+        .pl-lg{
+            &-1{
+                padding-left: .25rem !important;
+            }
+            &-2{
+                padding-left: .5rem !important;
+            }
+            &-3{
+                padding-left: 1rem !important;
+            }
+            &-4{
+                padding-left: 1.5rem !important;
+            }
+            &-5{
+                padding-left: 2rem !important;
+            }
+        }
+
+        // 右內距
+
+        .pr-lg{
+            &-1{
+                padding-right: .25rem !important;
+            }
+            &-2{
+                padding-right: .5rem !important;
+            }
+            &-3{
+                padding-right: 1rem !important;
+            }
+            &-4{
+                padding-right: 1.5rem !important;
+            }
+            &-5{
+                padding-right: 2rem !important;
+            }
+        }
+
+        // 上內距
+
+        .pt-lg{
+            &-1{
+                padding-top: .25rem !important;
+            }
+            &-2{
+                padding-top: .5rem !important;
+            }
+            &-3{
+                padding-top: 1rem !important;
+            }
+            &-4{
+                padding-top: 1.5rem !important;
+            }
+            &-5{
+                padding-top: 2rem !important;
+            }
+        }
+
+        // 下內距
+
+        .pb-lg{
+            &-1{
+                padding-bottom: .25rem !important;
+            }
+            &-2{
+                padding-bottom: .5rem !important;
+            }
+            &-3{
+                padding-bottom: 1rem !important;
+            }
+            &-4{
+                padding-bottom: 1.5rem !important;
+            }
+            &-5{
+                padding-bottom: 2rem !important;
+            }
+        }
+    }
+
+
+// 效果
+//-------------------------------------------------------
+
+    // 淺灰漸層
+
+    .gradient{
+        background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0) 80%, rgba(0,0,0,0.15) 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0) 80%,rgba(0,0,0,0.15) 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0) 80%,rgba(0,0,0,0.15) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#1a000000',GradientType=0 ); /* IE6-9 */
+    }
+
+
+    // 滑入陰影
+
+    .hvr-shadow {
+        display: inline-block;
+        vertical-align: middle;
+        -webkit-transform: perspective(1px) translateZ(0);
+                transform: perspective(1px) translateZ(0);
+        box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+        -webkit-transition-duration: 0.3s;
+        transition-duration: 0.3s;
+        -webkit-transition-property: box-shadow;
+        transition-property: box-shadow;
+    }
+    .hvr-shadow:hover,
+    .hvr-shadow:focus,
+    .hvr-shadow:active {
+        box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
+    }

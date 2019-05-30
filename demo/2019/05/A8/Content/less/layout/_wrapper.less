@@ -1,0 +1,79 @@
+//main: ../_main.less
+
+// bootstrap container
+//-------------------------------------------------------
+
+    .container {
+        position: relative;
+        max-width: inherit;
+        height: 100%;
+
+        &:after{
+            content: '';
+            display: table;
+            clear: both;
+        }
+
+        //min
+
+        @media @min576{
+            max-width: 1260px;
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+    }
+
+
+// 滿版背景凍結
+// 手機版用canvas繪制影片, 隱藏video
+// 桌機版直接播放影片, 隱藏canvas
+//-------------------------------------------------------
+
+    // 影片
+
+    .fit_video_background{
+        .fit_video,
+        .fit_canvas{
+            position: fixed;
+            z-index: -10;
+            top: 50%;
+            left: 50%;
+            transform: translateX(-50%) translateY(-50%);
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+        }
+    }
+
+    // 背景
+
+    .fit_img_background{
+        &:after{
+            content: "";
+            display: block;
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -10;
+            background: url('images/bg.gif') no-repeat center center;
+            -webkit-background-size: cover;
+                -moz-background-size: cover;
+                    -o-background-size: cover;
+                        background-size: cover;
+        }
+    }
+
+
+
+// 頁面框架
+//-------------------------------------------------------
+
+    .wrap_container{
+        position: relative;
+        padding-top: 60px;
+        overflow-x: hidden;
+    }
+
