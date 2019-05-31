@@ -238,12 +238,12 @@ function menuShowHide(){
             $menuIsOpen = false;
             $menuCon.css({'height': "0px"});
             $('.header').removeClass('act');
-            $('.menu_bar a.menu_btn').removeClass('act');
+            // $('.menu_bar a.menu_btn').removeClass('act');
         }else{
             $menuIsOpen = true;
             $menuCon.css({'height': window.innerHeight - 50 + "px"});
             $('.header').addClass('act');
-            $('.menu_bar a.menu_btn').addClass('act');
+            // $('.menu_bar a.menu_btn').addClass('act');
         }
     })
 }
@@ -277,9 +277,9 @@ function goToByScroll(id) {
     $menuCon.css({'height': "0px"});
     // $menuIsOpen = false;
 
-    $(".menu_btn" ).removeClass('act');
+    // $(".menu_btn" ).removeClass('act');
 
-    $(".menu_btn" + "."+ id +"" ).addClass('act');
+    // $(".menu_btn" + "."+ id +"" ).addClass('act');
 
     // Scroll
     $('html,body').animate({

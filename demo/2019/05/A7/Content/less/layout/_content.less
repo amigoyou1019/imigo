@@ -15,18 +15,17 @@ html {
     font-size: 1.6rem;
     margin: 0;
     padding: 0;
-
-    //預載圖片
-    ::before{
-        position:absolute; 
-        width:0; 
-        height:0; 
-        overflow:hidden; 
-        z-index:-1; 
-        content:url('images/game_img.png');
-    }
-
   }
+
+  //預載圖片
+  body:before{
+    position:absolute; 
+    width:0; 
+    height:0; 
+    overflow:hidden; 
+    z-index:-1; 
+    content:url('images/game_img.png');
+}
 
   body.fixed {
     overflow: hidden;
