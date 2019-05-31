@@ -7,6 +7,7 @@ var $windowWidth = $(window).width();
 var $windowHeight = $(window).height();
 var sideAdIsOpen = false;
 
+
 $(document).ready(function() {
     headerPositionTop();
     menuShowHide();
@@ -71,7 +72,6 @@ function cp_scroll_callback(event){
     var item_index = event.item.index;
     
     //關閉 map 提示cover
-    console.log(1);
     $('.map_dot').removeClass('act');
     $('.map_dot').eq(item_index).addClass('act');
     $('.info_owl_con').removeClass('act');
@@ -88,6 +88,13 @@ $(window).on('load', function () {
 $(window).on('scroll', function () {
     headerPositionTop();
     $windowHeight = $(window).height();
+
+    // 50
+    console.log(11);
+    scrollposition = $(window).scrollTop();
+    video_offset = $('#mark_video').offset();
+    map_offset = $('#mark_map').offset();
+    scrollPositionToPlay();
 });
 
 //當視窗改變尺寸
@@ -328,8 +335,5 @@ function sideAdShowHide(){
         $('.side_ad').removeClass('act');
         // 
     })
-
-
-    
 
 }
